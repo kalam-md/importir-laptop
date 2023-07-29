@@ -11,9 +11,9 @@ export default function Footer() {
             <p className="text-[16px] font-bold uppercase">Importir Laptop</p>
             <p className="text-[14px] mt-3 w-[300px]">Tempat perbaikan laptop terbaik dan terpercaya yang bisa kalian hubungi di daerah Bandung. Selain jasa perbaikan, menyediakan laptop second yang berkualitas, yang dapat menampung kebutuhan anda.</p>
           </div>
-          <div className="mt-5 md:mt-0">
-            <p className="text-[16px] font-bold uppercase">Layanan</p>
-            <Link to="/layanan/reparasi" className="text-[14px] mt-3">Reparasi</Link><br />
+          <div className="mt-5 md:mt-0 flex-col">
+            <p className="text-[16px] font-bold uppercase mb-3">Layanan</p>
+            <Link to="/layanan/reparasi" className="text-[14px]">Reparasi</Link><br />
             <Link to="/layanan/penjualan" className="text-[14px]">Beli Second</Link>
           </div>
 
