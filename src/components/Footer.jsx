@@ -17,6 +17,8 @@ export default function Footer() {
             <Link to="/layanan/penjualan" className="text-[14px]">Beli Second</Link>
           </div>
 
+          <div className="hidden md:block"></div>
+
           <div className="mt-5 md:mt-0">
             <p className="text-[16px] font-bold uppercase">Lokasi Kami</p>
             <p className="text-[14px] mt-3 w-[300px]">Ruko Hotel Neo, Jl. Dipati Ukur No.72C Lebakgede, Kecamatan Coblong Kota Bandung, Jawa Barat 40132</p>
