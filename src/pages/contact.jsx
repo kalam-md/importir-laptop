@@ -38,7 +38,7 @@ export default function Contact() {
           <a href="https://www.tiktok.com/@importir.laptop" target="blank" className="grid justify-items-center text-primary">
             <BsTiktok size="4.5rem"/>
             <h2 className="mt-2">Tiktok</h2>
-            <span className="text-[12px]">(Everyday)</span>
+            <span className="text-[12px]">Visit and Follow</span>
             <span className="text-[12px]">importir.laptop</span>
           </a>
           <a href="https://www.instagram.com/importirlaptop.id/?hl=id" target="blank" className="grid justify-items-center text-primary">
