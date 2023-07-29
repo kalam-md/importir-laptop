@@ -4,6 +4,7 @@ import Reparasi3 from "../assets/img/reparasi3.png"
 import Reparasi4 from "../assets/img/reparasi4.png"
 import Reparasi5 from "../assets/img/reparasi5.png"
 import Reparasi6 from "../assets/img/reparasi6.png"
+import { Link } from "react-router-dom";
 
 export default function Tentang() {
   const reparasi = [
@@ -21,8 +22,12 @@ export default function Tentang() {
           <p className="md:mt-4 text-[20px] text-center">Percaya, Didie mah ahlina</p>
         </div>  
         <div className="font-bold flex md:flex-row flex-col justify-center gap-8">
+          <Link to="/kontak">
           <img src={Reparasi1} alt="kontak" className="w-[400px]"/>
+          </Link>
+          <Link to="/kontak">
           <img src={Reparasi2} alt="kontak" className="w-[400px]"/>
+          </Link>
         </div>
         <div className="flex justify-center mx-auto mt-3 text-center max-w-xl">
           <p>Tingkatkan performa laptop Anda dengan mengupgrade komponen yang sudah usang, di sini kami menyediakan spare part terbaik.</p>

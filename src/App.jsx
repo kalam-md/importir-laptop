@@ -12,7 +12,6 @@ export default function App() {
   return (
     <>
       <div className="font-body">
-
         <Router>
           <Navbar />
           <Routes>
@@ -23,9 +22,8 @@ export default function App() {
             <Route path="/tentang" element={<Tentang />} />
             <Route path="/kontak" element={<Contact />} />
           </Routes>
+          <Footer />
         </Router>
-
-        <Footer />
       </div>
     </>
   )

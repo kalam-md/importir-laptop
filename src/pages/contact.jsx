@@ -60,7 +60,7 @@ export default function Contact() {
           </div>
           <div className="grid md:grid-cols-4 grid-cols-1 mt-5 gap-4">
             {galeri.map((data) => (
-              <img src={data.img} key={data.id} className="h-full"/>
+              <img src={data.img} key={data.id} className="h-full hover:scale-110 transition duration-300"/>
             ))}
           </div>
         </p>

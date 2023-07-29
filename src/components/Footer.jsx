@@ -1,5 +1,6 @@
 import { AiOutlineInstagram, AiOutlineWhatsApp } from "react-icons/ai";
 import { BsTiktok } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -12,8 +13,8 @@ export default function Footer() {
           </div>
           <div className="mt-5 md:mt-0">
             <p className="text-[16px] font-bold uppercase">Layanan</p>
-            <p className="text-[14px] mt-3">Reparasi</p>
-            <p className="text-[14px]">Beli Second</p>
+            <Link to="/layanan/reparasi" className="text-[14px] mt-3">Reparasi</Link><br />
+            <Link to="/layanan/penjualan" className="text-[14px]">Beli Second</Link>
           </div>
         </div>
 
@@ -40,7 +41,7 @@ export default function Footer() {
       </div>
       
       <footer className="flex justify-center items-center bg-cover bg-center bg-[#1E1E1E] h-[55px] md:px-[10rem]">
-        <span className="text-white font-normal text-[14px]">COPYRIGHT &copy; IMPORTIR LAPTOP.</span>
+        <span className="text-white font-normal text-[14px]">&copy;COPYRIGHT 2023 | IMPORTIR LAPTOP.</span>
       </footer>
     </>
   )

@@ -28,7 +28,7 @@ export default function Penjualan() {
           </div>
           <div className="grid md:grid-cols-4 grid-cols-1 place-items-center mt-10 gap-[3rem]">
             {penjualan.map((data) => (
-              <img src={data.img} key={data.id} className="h-full"/>
+              <img src={data.img} key={data.id} className="h-full hover:scale-110 transition duration-300"/>
             ))}
           </div>
         </p>

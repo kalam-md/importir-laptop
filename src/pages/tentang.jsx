@@ -35,7 +35,7 @@ export default function Tentang() {
           </div>
           <div className="grid md:grid-cols-6 grid-cols-2 mt-10 gap-4">
             {teknisi.map((data) => (
-              <img src={data.img} key={data.id} className="h-full"/>
+              <img src={data.img} key={data.id} className="h-full hover:scale-110 transition duration-300"/>
             ))}
           </div>
         </p>

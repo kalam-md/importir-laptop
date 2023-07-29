@@ -42,7 +42,9 @@ export default function Layanan() {
           <h1 className="text-[24px] md:text-[30px] font-bold border-l-4 border-yellow pl-4">Mau Beli Second?</h1>
           <div className="grid md:grid-cols-4 grid-cols-1 mt-5 gap-4">
             {produk.map((data) => (
-              <img src={data.img} key={data.id} className="h-full"/>
+              <NavLink key={data.id} to="/layanan/penjualan">
+                <img src={data.img} className="h-full hover:scale-110 transition duration-300"/>
+              </NavLink>
             ))}
           </div>
         </p>
