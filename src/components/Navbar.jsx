@@ -12,7 +12,7 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex justify-between items-center gap-[4.5rem] md:h-[85px] h-[65px] bg-cover bg-center mx-auto md:px-[5rem] bg-primary">
+    <nav className="sticky top-0 z-50 flex justify-between items-center gap-[4.5rem] md:h-[85px] h-[65px] bg-cover bg-center mx-auto md:px-[5rem] bg-primary">
       <div className="hidden md:flex md:items-center">
         <img src={Logo} alt="Logo" className="w-[50px]"/>
         <h1 className="uppercase ml-3 text-[16px] font-bold text-white">Importir Laptop</h1>
