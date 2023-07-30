@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row md:justify-evenly md:gap-[6rem] mt-5 md:mt-0">
           <div className="">
             <p className="text-[13px] font-bold uppercase">Importir Laptop</p>
-            <p className="text-[13px] mt-3 w-[300px]">Tempat perbaikan laptop terbaik dan terpercaya yang bisa kalian hubungi di daerah Bandung. Selain jasa perbaikan, menyediakan laptop second yang berkualitas, yang dapat menampung kebutuhan anda.</p>
+            <p className="text-[13px] mt-3 w-[280px]">Tempat perbaikan laptop terbaik dan terpercaya yang bisa kalian hubungi di daerah Bandung. Selain jasa perbaikan, menyediakan laptop second yang berkualitas, yang dapat menampung kebutuhan anda.</p>
           </div>
           <div className="mt-5 md:mt-0 flex-col">
             <p className="text-[13px] font-bold uppercase mb-3">Layanan</p>
