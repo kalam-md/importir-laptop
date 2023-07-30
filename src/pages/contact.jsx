@@ -1,5 +1,5 @@
-import { AiOutlineWhatsApp, AiOutlineInstagram } from "react-icons/ai";
-import { BsTiktok } from "react-icons/bs";
+import { BsWhatsapp, BsInstagram } from "react-icons/bs";
+import { FaTiktok } from "react-icons/fa";
 import Galeri1 from "../assets/img/galeri1.png"
 import Galeri2 from "../assets/img/galeri2.png"
 import Galeri3 from "../assets/img/galeri3.png"
@@ -29,20 +29,20 @@ export default function Contact() {
         </div>
         <div className="md:flex md:justify-center mt-10 grid md:grid-cols-3 md:gap-[5rem] gap-[2rem]">
           <a href="https://api.whatsapp.com/send/?phone=6287825566665&text&type=phone_number&app_absent=0" target="blank" className="grid justify-items-center text-primary">
-            <AiOutlineWhatsApp size="4.5rem"/>
+            <BsWhatsapp size="4.5rem"/>
             <h2 className="mt-2">Whatsapp</h2>
             <span className="text-[12px]">(Everyday)</span>
             <span className="text-[12px]">Pukul 10.00 - 21.00 WIB</span>
             <span className="text-[12px]">0878-2556-6665</span>
           </a>
           <a href="https://www.tiktok.com/@importir.laptop" target="blank" className="grid justify-items-center text-primary">
-            <BsTiktok size="4.5rem"/>
+            <FaTiktok size="4.5rem"/>
             <h2 className="mt-2">Tiktok</h2>
             <span className="text-[12px]">Visit and Follow</span>
             <span className="text-[12px]">importir.laptop</span>
           </a>
           <a href="https://www.instagram.com/importirlaptop.id/?hl=id" target="blank" className="grid justify-items-center text-primary">
-            <AiOutlineInstagram size="4.5rem"/>
+            <BsInstagram size="4.5rem"/>
             <h2 className="mt-2">Instagram</h2>
             <span className="text-[12px]">Visit and Follow</span>
             <span className="text-[12px]">@importirlaptop.id</span>
