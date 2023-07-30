@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <>
-      <div className="flex-col md:flex md:flex-row md:justify-evenly py-10 bg-primary px-5 md:px-[5rem] text-white">
-        <div className="flex flex-col md:flex-row md:justify-evenly md:gap-[6rem] mt-5 md:mt-0">
+      <div className="flex-col md:flex md:flex-row md:justify-between py-10 bg-primary px-5 md:px-[5rem] text-white">
+        <div className="flex flex-col md:flex-row md:justify-between md:gap-[6rem] mt-5 md:mt-0 w-full">
           <div className="">
             <p className="text-[13px] font-bold uppercase">Importir Laptop</p>
             <p className="text-[13px] mt-3 w-[280px]">Tempat perbaikan laptop terbaik dan terpercaya yang bisa kalian hubungi di daerah Bandung. Selain jasa perbaikan, menyediakan laptop second yang berkualitas, yang dapat menampung kebutuhan anda.</p>
