@@ -1,7 +1,7 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 import Logo from "../assets/img/logo.png"
 import { AiOutlineMenu } from "react-icons/ai";
-import { useState } from "react";
 
 export default function Navbar() {
   const classNameFunc = ({ isActive }) => (isActive ? "text-yellow" : "hover:text-yellow");
@@ -9,6 +9,11 @@ export default function Navbar() {
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen((prevState) => !prevState);
+  };
+
+  const handleNavLinkClick = () => {
+    setMobileMenuOpen(false); // Close mobile menu when NavLink is clicked
+    window.scrollTo(0, 0); // Scroll to the top of the page
   };
 
   return (
@@ -30,25 +35,25 @@ export default function Navbar() {
       </div>
 
       <div className="hidden md:flex md:gap-[4.5rem] text-white text-[16px] font-bold">
-          <NavLink to="/" className={classNameFunc}>Home</NavLink>
-          <NavLink to="/layanan" className={classNameFunc}>Layanan</NavLink>
-          <NavLink to="/tentang" className={classNameFunc}>Tentang</NavLink>
-          <NavLink to="/kontak" className={classNameFunc}>Kontak</NavLink>
+          <NavLink to="/" className={classNameFunc} onClick={handleNavLinkClick}>Home</NavLink>
+          <NavLink to="/layanan" className={classNameFunc} onClick={handleNavLinkClick}>Layanan</NavLink>
+          <NavLink to="/tentang" className={classNameFunc} onClick={handleNavLinkClick}>Tentang</NavLink>
+          <NavLink to="/kontak" className={classNameFunc} onClick={handleNavLinkClick}>Kontak</NavLink>
       </div>
 
       {/* Mobile Menu Links */}
       {mobileMenuOpen && (
         <div className="absolute rounded-md md:hidden flex flex-col gap-[1.5rem] text-white font-bold text-[16px] py-5 pl-5 pr-10 mt-[17.5rem] ml-3 bg-cover bg-center shadow-lg bg-primary">
-          <NavLink to="/" className={classNameFunc} onClick={toggleMobileMenu}>
+          <NavLink to="/" className={classNameFunc} onClick={handleNavLinkClick}>
             Home
           </NavLink>
-          <NavLink to="/layanan" className={classNameFunc} onClick={toggleMobileMenu}>
+          <NavLink to="/layanan" className={classNameFunc} onClick={handleNavLinkClick}>
             Layanan
           </NavLink>
-          <NavLink to="/tentang" className={classNameFunc} onClick={toggleMobileMenu}>
+          <NavLink to="/tentang" className={classNameFunc} onClick={handleNavLinkClick}>
             Tentang
           </NavLink>
-          <NavLink to="/kontak" className={classNameFunc} onClick={toggleMobileMenu}>
+          <NavLink to="/kontak" className={classNameFunc} onClick={handleNavLinkClick}>
             Kontak
           </NavLink>
         </div>
